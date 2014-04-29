@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FA767F4190AA5B100C6F610 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA767F3190AA5B100C6F610 /* Foundation.framework */; };
+		1FA767F6190AA5B100C6F610 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA767F5190AA5B100C6F610 /* CoreGraphics.framework */; };
+		1FA767F8190AA5B100C6F610 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA767F7190AA5B100C6F610 /* UIKit.framework */; };
+		1FA767FE190AA5B100C6F610 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FA767FC190AA5B100C6F610 /* InfoPlist.strings */; };
+		1FA76800190AA5B100C6F610 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA767FF190AA5B100C6F610 /* main.m */; };
+		1FA76804190AA5B100C6F610 /* RWMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA76803190AA5B100C6F610 /* RWMAppDelegate.m */; };
+		1FA76807190AA5B100C6F610 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA76805190AA5B100C6F610 /* Main.storyboard */; };
+		1FA7680A190AA5B100C6F610 /* RWMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA76809190AA5B100C6F610 /* RWMViewController.m */; };
+		1FA7680C190AA5B100C6F610 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FA7680B190AA5B100C6F610 /* Images.xcassets */; };
+		1FA76813190AA5B200C6F610 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA76812190AA5B200C6F610 /* XCTest.framework */; };
+		1FA76814190AA5B200C6F610 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA767F3190AA5B100C6F610 /* Foundation.framework */; };
+		1FA76815190AA5B200C6F610 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA767F7190AA5B100C6F610 /* UIKit.framework */; };
+		1FA7681D190AA5B200C6F610 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FA7681B190AA5B200C6F610 /* InfoPlist.strings */; };
+		1FA7681F190AA5B200C6F610 /* RWMVimeoClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7681E190AA5B200C6F610 /* RWMVimeoClientTests.m */; };
+		1FA7798F190E57B90065388B /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA7798E190E57B90065388B /* libxml2.dylib */; };
+		1FA77991190E57BE0065388B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA77990190E57BE0065388B /* Security.framework */; };
+		1FAC6B4E190F98A400AEDDB8 /* NSString+QueryComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC6B43190F98A400AEDDB8 /* NSString+QueryComponents.m */; };
+		1FAC6B4F190F98A400AEDDB8 /* NSURL+QueryComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC6B45190F98A400AEDDB8 /* NSURL+QueryComponents.m */; };
+		1FAC6B50190F98A400AEDDB8 /* OADataFetcher+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC6B47190F98A400AEDDB8 /* OADataFetcher+Blocks.m */; };
+		1FAC6B51190F98A400AEDDB8 /* RWMHTTPVimeoRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC6B49190F98A400AEDDB8 /* RWMHTTPVimeoRequestSerializer.m */; };
+		1FAC6B52190F98A400AEDDB8 /* RWMVimeoAuthenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC6B4B190F98A400AEDDB8 /* RWMVimeoAuthenticator.m */; };
+		1FAC6B53190F98A400AEDDB8 /* RWMVimeoOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC6B4D190F98A400AEDDB8 /* RWMVimeoOperationManager.m */; };
+		1FAC6B71190F98AC00AEDDB8 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC6B55190F98AC00AEDDB8 /* Base64Transcoder.c */; };
+		1FAC6B72190F98AC00AEDDB8 /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC6B58190F98AC00AEDDB8 /* NSMutableURLRequest+Parameters.m */; };
+		1FAC6B73190F98AC00AEDDB8 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC6B5A190F98AC00AEDDB8 /* NSString+URLEncoding.m */; };
+		1FAC6B74190F98AC00AEDDB8 /* NSURL+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC6B5C190F98AC00AEDDB8 /* NSURL+Base.m */; };
+		1FAC6B75190F98AC00AEDDB8 /* OAAsynchronousDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC6B5E190F98AC00AEDDB8 /* OAAsynchronousDataFetcher.m */; };
+		1FAC6B76190F98AC00AEDDB8 /* OAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC6B60190F98AC00AEDDB8 /* OAConsumer.m */; };
+		1FAC6B77190F98AC00AEDDB8 /* OADataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC6B62190F98AC00AEDDB8 /* OADataFetcher.m */; };
+		1FAC6B78190F98AC00AEDDB8 /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC6B64190F98AC00AEDDB8 /* OAHMAC_SHA1SignatureProvider.m */; };
+		1FAC6B79190F98AC00AEDDB8 /* OAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC6B66190F98AC00AEDDB8 /* OAMutableURLRequest.m */; };
+		1FAC6B7A190F98AC00AEDDB8 /* OAPlaintextSignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC6B68190F98AC00AEDDB8 /* OAPlaintextSignatureProvider.m */; };
+		1FAC6B7B190F98AC00AEDDB8 /* OARequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC6B6A190F98AC00AEDDB8 /* OARequestParameter.m */; };
+		1FAC6B7C190F98AC00AEDDB8 /* OAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC6B6C190F98AC00AEDDB8 /* OAServiceTicket.m */; };
+		1FAC6B7D190F98AC00AEDDB8 /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC6B6F190F98AC00AEDDB8 /* OAToken.m */; };
+		FA4DC5E5F2424BAA80714284 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1043AB9B6D904707A07F296C /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FA76816190AA5B200C6F610 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FA767E8190AA5B100C6F610 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FA767EF190AA5B100C6F610;
+			remoteInfo = RWMVimeoClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1043AB9B6D904707A07F296C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FA767F0190AA5B100C6F610 /* RWMVimeoClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWMVimeoClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FA767F3190AA5B100C6F610 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1FA767F5190AA5B100C6F610 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1FA767F7190AA5B100C6F610 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1FA767FB190AA5B100C6F610 /* RWMVimeoClient-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RWMVimeoClient-Info.plist"; sourceTree = "<group>"; };
+		1FA767FD190AA5B100C6F610 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1FA767FF190AA5B100C6F610 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1FA76801190AA5B100C6F610 /* RWMVimeoClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RWMVimeoClient-Prefix.pch"; sourceTree = "<group>"; };
+		1FA76802190AA5B100C6F610 /* RWMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWMAppDelegate.h; sourceTree = "<group>"; };
+		1FA76803190AA5B100C6F610 /* RWMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWMAppDelegate.m; sourceTree = "<group>"; };
+		1FA76806190AA5B100C6F610 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1FA76808190AA5B100C6F610 /* RWMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWMViewController.h; sourceTree = "<group>"; };
+		1FA76809190AA5B100C6F610 /* RWMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWMViewController.m; sourceTree = "<group>"; };
+		1FA7680B190AA5B100C6F610 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1FA76811190AA5B200C6F610 /* RWMVimeoClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RWMVimeoClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FA76812190AA5B200C6F610 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1FA7681A190AA5B200C6F610 /* RWMVimeoClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RWMVimeoClientTests-Info.plist"; sourceTree = "<group>"; };
+		1FA7681C190AA5B200C6F610 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1FA7681E190AA5B200C6F610 /* RWMVimeoClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWMVimeoClientTests.m; sourceTree = "<group>"; };
+		1FA7798E190E57B90065388B /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		1FA77990190E57BE0065388B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1FAC6B42190F98A400AEDDB8 /* NSString+QueryComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+QueryComponents.h"; path = "../Source/NSString+QueryComponents.h"; sourceTree = "<group>"; };
+		1FAC6B43190F98A400AEDDB8 /* NSString+QueryComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+QueryComponents.m"; path = "../Source/NSString+QueryComponents.m"; sourceTree = "<group>"; };
+		1FAC6B44190F98A400AEDDB8 /* NSURL+QueryComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+QueryComponents.h"; path = "../Source/NSURL+QueryComponents.h"; sourceTree = "<group>"; };
+		1FAC6B45190F98A400AEDDB8 /* NSURL+QueryComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+QueryComponents.m"; path = "../Source/NSURL+QueryComponents.m"; sourceTree = "<group>"; };
+		1FAC6B46190F98A400AEDDB8 /* OADataFetcher+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "OADataFetcher+Blocks.h"; path = "../Source/OADataFetcher+Blocks.h"; sourceTree = "<group>"; };
+		1FAC6B47190F98A400AEDDB8 /* OADataFetcher+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "OADataFetcher+Blocks.m"; path = "../Source/OADataFetcher+Blocks.m"; sourceTree = "<group>"; };
+		1FAC6B48190F98A400AEDDB8 /* RWMHTTPVimeoRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWMHTTPVimeoRequestSerializer.h; path = ../Source/RWMHTTPVimeoRequestSerializer.h; sourceTree = "<group>"; };
+		1FAC6B49190F98A400AEDDB8 /* RWMHTTPVimeoRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWMHTTPVimeoRequestSerializer.m; path = ../Source/RWMHTTPVimeoRequestSerializer.m; sourceTree = "<group>"; };
+		1FAC6B4A190F98A400AEDDB8 /* RWMVimeoAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWMVimeoAuthenticator.h; path = ../Source/RWMVimeoAuthenticator.h; sourceTree = "<group>"; };
+		1FAC6B4B190F98A400AEDDB8 /* RWMVimeoAuthenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWMVimeoAuthenticator.m; path = ../Source/RWMVimeoAuthenticator.m; sourceTree = "<group>"; };
+		1FAC6B4C190F98A400AEDDB8 /* RWMVimeoOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWMVimeoOperationManager.h; path = ../Source/RWMVimeoOperationManager.h; sourceTree = "<group>"; };
+		1FAC6B4D190F98A400AEDDB8 /* RWMVimeoOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWMVimeoOperationManager.m; path = ../Source/RWMVimeoOperationManager.m; sourceTree = "<group>"; };
+		1FAC6B55190F98AC00AEDDB8 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
+		1FAC6B56190F98AC00AEDDB8 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		1FAC6B57190F98AC00AEDDB8 /* NSMutableURLRequest+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableURLRequest+Parameters.h"; path = "../Source/OAuthConsumer/NSMutableURLRequest+Parameters.h"; sourceTree = "<group>"; };
+		1FAC6B58190F98AC00AEDDB8 /* NSMutableURLRequest+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableURLRequest+Parameters.m"; path = "../Source/OAuthConsumer/NSMutableURLRequest+Parameters.m"; sourceTree = "<group>"; };
+		1FAC6B59190F98AC00AEDDB8 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+URLEncoding.h"; path = "../Source/OAuthConsumer/NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		1FAC6B5A190F98AC00AEDDB8 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+URLEncoding.m"; path = "../Source/OAuthConsumer/NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		1FAC6B5B190F98AC00AEDDB8 /* NSURL+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+Base.h"; path = "../Source/OAuthConsumer/NSURL+Base.h"; sourceTree = "<group>"; };
+		1FAC6B5C190F98AC00AEDDB8 /* NSURL+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+Base.m"; path = "../Source/OAuthConsumer/NSURL+Base.m"; sourceTree = "<group>"; };
+		1FAC6B5D190F98AC00AEDDB8 /* OAAsynchronousDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAAsynchronousDataFetcher.h; path = ../Source/OAuthConsumer/OAAsynchronousDataFetcher.h; sourceTree = "<group>"; };
+		1FAC6B5E190F98AC00AEDDB8 /* OAAsynchronousDataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAAsynchronousDataFetcher.m; path = ../Source/OAuthConsumer/OAAsynchronousDataFetcher.m; sourceTree = "<group>"; };
+		1FAC6B5F190F98AC00AEDDB8 /* OAConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAConsumer.h; path = ../Source/OAuthConsumer/OAConsumer.h; sourceTree = "<group>"; };
+		1FAC6B60190F98AC00AEDDB8 /* OAConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAConsumer.m; path = ../Source/OAuthConsumer/OAConsumer.m; sourceTree = "<group>"; };
+		1FAC6B61190F98AC00AEDDB8 /* OADataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OADataFetcher.h; path = ../Source/OAuthConsumer/OADataFetcher.h; sourceTree = "<group>"; };
+		1FAC6B62190F98AC00AEDDB8 /* OADataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OADataFetcher.m; path = ../Source/OAuthConsumer/OADataFetcher.m; sourceTree = "<group>"; };
+		1FAC6B63190F98AC00AEDDB8 /* OAHMAC_SHA1SignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAHMAC_SHA1SignatureProvider.h; path = ../Source/OAuthConsumer/OAHMAC_SHA1SignatureProvider.h; sourceTree = "<group>"; };
+		1FAC6B64190F98AC00AEDDB8 /* OAHMAC_SHA1SignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAHMAC_SHA1SignatureProvider.m; path = ../Source/OAuthConsumer/OAHMAC_SHA1SignatureProvider.m; sourceTree = "<group>"; };
+		1FAC6B65190F98AC00AEDDB8 /* OAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAMutableURLRequest.h; path = ../Source/OAuthConsumer/OAMutableURLRequest.h; sourceTree = "<group>"; };
+		1FAC6B66190F98AC00AEDDB8 /* OAMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAMutableURLRequest.m; path = ../Source/OAuthConsumer/OAMutableURLRequest.m; sourceTree = "<group>"; };
+		1FAC6B67190F98AC00AEDDB8 /* OAPlaintextSignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAPlaintextSignatureProvider.h; path = ../Source/OAuthConsumer/OAPlaintextSignatureProvider.h; sourceTree = "<group>"; };
+		1FAC6B68190F98AC00AEDDB8 /* OAPlaintextSignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAPlaintextSignatureProvider.m; path = ../Source/OAuthConsumer/OAPlaintextSignatureProvider.m; sourceTree = "<group>"; };
+		1FAC6B69190F98AC00AEDDB8 /* OARequestParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OARequestParameter.h; path = ../Source/OAuthConsumer/OARequestParameter.h; sourceTree = "<group>"; };
+		1FAC6B6A190F98AC00AEDDB8 /* OARequestParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OARequestParameter.m; path = ../Source/OAuthConsumer/OARequestParameter.m; sourceTree = "<group>"; };
+		1FAC6B6B190F98AC00AEDDB8 /* OAServiceTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAServiceTicket.h; path = ../Source/OAuthConsumer/OAServiceTicket.h; sourceTree = "<group>"; };
+		1FAC6B6C190F98AC00AEDDB8 /* OAServiceTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAServiceTicket.m; path = ../Source/OAuthConsumer/OAServiceTicket.m; sourceTree = "<group>"; };
+		1FAC6B6D190F98AC00AEDDB8 /* OASignatureProviding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OASignatureProviding.h; path = ../Source/OAuthConsumer/OASignatureProviding.h; sourceTree = "<group>"; };
+		1FAC6B6E190F98AC00AEDDB8 /* OAToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAToken.h; path = ../Source/OAuthConsumer/OAToken.h; sourceTree = "<group>"; };
+		1FAC6B6F190F98AC00AEDDB8 /* OAToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAToken.m; path = ../Source/OAuthConsumer/OAToken.m; sourceTree = "<group>"; };
+		1FAC6B70190F98AC00AEDDB8 /* OAuthConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAuthConsumer.h; path = ../Source/OAuthConsumer/OAuthConsumer.h; sourceTree = "<group>"; };
+		DC34F6A81DAA4F149E3F8D35 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FA767ED190AA5B100C6F610 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FA77991190E57BE0065388B /* Security.framework in Frameworks */,
+				1FA7798F190E57B90065388B /* libxml2.dylib in Frameworks */,
+				1FA767F6190AA5B100C6F610 /* CoreGraphics.framework in Frameworks */,
+				1FA767F8190AA5B100C6F610 /* UIKit.framework in Frameworks */,
+				1FA767F4190AA5B100C6F610 /* Foundation.framework in Frameworks */,
+				FA4DC5E5F2424BAA80714284 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FA7680E190AA5B200C6F610 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FA76813190AA5B200C6F610 /* XCTest.framework in Frameworks */,
+				1FA76815190AA5B200C6F610 /* UIKit.framework in Frameworks */,
+				1FA76814190AA5B200C6F610 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FA767E7190AA5B100C6F610 = {
+			isa = PBXGroup;
+			children = (
+				1FA779AF190E97B00065388B /* Client */,
+				1FA7794F190E56D20065388B /* OAuthConsumer */,
+				1FA767F9190AA5B100C6F610 /* RWMVimeoClient */,
+				1FA76818190AA5B200C6F610 /* RWMVimeoClientTests */,
+				1FA767F2190AA5B100C6F610 /* Frameworks */,
+				1FA767F1190AA5B100C6F610 /* Products */,
+				DC34F6A81DAA4F149E3F8D35 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		1FA767F1190AA5B100C6F610 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FA767F0190AA5B100C6F610 /* RWMVimeoClient.app */,
+				1FA76811190AA5B200C6F610 /* RWMVimeoClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FA767F2190AA5B100C6F610 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FA77990190E57BE0065388B /* Security.framework */,
+				1FA7798E190E57B90065388B /* libxml2.dylib */,
+				1FA767F3190AA5B100C6F610 /* Foundation.framework */,
+				1FA767F5190AA5B100C6F610 /* CoreGraphics.framework */,
+				1FA767F7190AA5B100C6F610 /* UIKit.framework */,
+				1FA76812190AA5B200C6F610 /* XCTest.framework */,
+				1043AB9B6D904707A07F296C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FA767F9190AA5B100C6F610 /* RWMVimeoClient */ = {
+			isa = PBXGroup;
+			children = (
+				1FA76802190AA5B100C6F610 /* RWMAppDelegate.h */,
+				1FA76803190AA5B100C6F610 /* RWMAppDelegate.m */,
+				1FA76805190AA5B100C6F610 /* Main.storyboard */,
+				1FA76808190AA5B100C6F610 /* RWMViewController.h */,
+				1FA76809190AA5B100C6F610 /* RWMViewController.m */,
+				1FA7680B190AA5B100C6F610 /* Images.xcassets */,
+				1FA767FA190AA5B100C6F610 /* Supporting Files */,
+			);
+			path = RWMVimeoClient;
+			sourceTree = "<group>";
+		};
+		1FA767FA190AA5B100C6F610 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FA767FB190AA5B100C6F610 /* RWMVimeoClient-Info.plist */,
+				1FA767FC190AA5B100C6F610 /* InfoPlist.strings */,
+				1FA767FF190AA5B100C6F610 /* main.m */,
+				1FA76801190AA5B100C6F610 /* RWMVimeoClient-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FA76818190AA5B200C6F610 /* RWMVimeoClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				1FA7681E190AA5B200C6F610 /* RWMVimeoClientTests.m */,
+				1FA76819190AA5B200C6F610 /* Supporting Files */,
+			);
+			path = RWMVimeoClientTests;
+			sourceTree = "<group>";
+		};
+		1FA76819190AA5B200C6F610 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FA7681A190AA5B200C6F610 /* RWMVimeoClientTests-Info.plist */,
+				1FA7681B190AA5B200C6F610 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FA7794F190E56D20065388B /* OAuthConsumer */ = {
+			isa = PBXGroup;
+			children = (
+				1FAC6B54190F98AC00AEDDB8 /* Crypto */,
+				1FAC6B57190F98AC00AEDDB8 /* NSMutableURLRequest+Parameters.h */,
+				1FAC6B58190F98AC00AEDDB8 /* NSMutableURLRequest+Parameters.m */,
+				1FAC6B59190F98AC00AEDDB8 /* NSString+URLEncoding.h */,
+				1FAC6B5A190F98AC00AEDDB8 /* NSString+URLEncoding.m */,
+				1FAC6B5B190F98AC00AEDDB8 /* NSURL+Base.h */,
+				1FAC6B5C190F98AC00AEDDB8 /* NSURL+Base.m */,
+				1FAC6B5D190F98AC00AEDDB8 /* OAAsynchronousDataFetcher.h */,
+				1FAC6B5E190F98AC00AEDDB8 /* OAAsynchronousDataFetcher.m */,
+				1FAC6B5F190F98AC00AEDDB8 /* OAConsumer.h */,
+				1FAC6B60190F98AC00AEDDB8 /* OAConsumer.m */,
+				1FAC6B61190F98AC00AEDDB8 /* OADataFetcher.h */,
+				1FAC6B62190F98AC00AEDDB8 /* OADataFetcher.m */,
+				1FAC6B63190F98AC00AEDDB8 /* OAHMAC_SHA1SignatureProvider.h */,
+				1FAC6B64190F98AC00AEDDB8 /* OAHMAC_SHA1SignatureProvider.m */,
+				1FAC6B65190F98AC00AEDDB8 /* OAMutableURLRequest.h */,
+				1FAC6B66190F98AC00AEDDB8 /* OAMutableURLRequest.m */,
+				1FAC6B67190F98AC00AEDDB8 /* OAPlaintextSignatureProvider.h */,
+				1FAC6B68190F98AC00AEDDB8 /* OAPlaintextSignatureProvider.m */,
+				1FAC6B69190F98AC00AEDDB8 /* OARequestParameter.h */,
+				1FAC6B6A190F98AC00AEDDB8 /* OARequestParameter.m */,
+				1FAC6B6B190F98AC00AEDDB8 /* OAServiceTicket.h */,
+				1FAC6B6C190F98AC00AEDDB8 /* OAServiceTicket.m */,
+				1FAC6B6D190F98AC00AEDDB8 /* OASignatureProviding.h */,
+				1FAC6B6E190F98AC00AEDDB8 /* OAToken.h */,
+				1FAC6B6F190F98AC00AEDDB8 /* OAToken.m */,
+				1FAC6B70190F98AC00AEDDB8 /* OAuthConsumer.h */,
+			);
+			name = OAuthConsumer;
+			sourceTree = "<group>";
+		};
+		1FA779AF190E97B00065388B /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				1FAC6B42190F98A400AEDDB8 /* NSString+QueryComponents.h */,
+				1FAC6B43190F98A400AEDDB8 /* NSString+QueryComponents.m */,
+				1FAC6B44190F98A400AEDDB8 /* NSURL+QueryComponents.h */,
+				1FAC6B45190F98A400AEDDB8 /* NSURL+QueryComponents.m */,
+				1FAC6B46190F98A400AEDDB8 /* OADataFetcher+Blocks.h */,
+				1FAC6B47190F98A400AEDDB8 /* OADataFetcher+Blocks.m */,
+				1FAC6B48190F98A400AEDDB8 /* RWMHTTPVimeoRequestSerializer.h */,
+				1FAC6B49190F98A400AEDDB8 /* RWMHTTPVimeoRequestSerializer.m */,
+				1FAC6B4A190F98A400AEDDB8 /* RWMVimeoAuthenticator.h */,
+				1FAC6B4B190F98A400AEDDB8 /* RWMVimeoAuthenticator.m */,
+				1FAC6B4C190F98A400AEDDB8 /* RWMVimeoOperationManager.h */,
+				1FAC6B4D190F98A400AEDDB8 /* RWMVimeoOperationManager.m */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		1FAC6B54190F98AC00AEDDB8 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				1FAC6B55190F98AC00AEDDB8 /* Base64Transcoder.c */,
+				1FAC6B56190F98AC00AEDDB8 /* Base64Transcoder.h */,
+			);
+			name = Crypto;
+			path = ../Source/OAuthConsumer/Crypto;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FA767EF190AA5B100C6F610 /* RWMVimeoClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FA76822190AA5B200C6F610 /* Build configuration list for PBXNativeTarget "RWMVimeoClient" */;
+			buildPhases = (
+				2984AFD33E1D4EA7AD1F587C /* Check Pods Manifest.lock */,
+				1FA767EC190AA5B100C6F610 /* Sources */,
+				1FA767ED190AA5B100C6F610 /* Frameworks */,
+				1FA767EE190AA5B100C6F610 /* Resources */,
+				D57FAAB071EB4BB08A2E5176 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RWMVimeoClient;
+			productName = RWMVimeoClient;
+			productReference = 1FA767F0190AA5B100C6F610 /* RWMVimeoClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FA76810190AA5B200C6F610 /* RWMVimeoClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FA76825190AA5B200C6F610 /* Build configuration list for PBXNativeTarget "RWMVimeoClientTests" */;
+			buildPhases = (
+				1FA7680D190AA5B200C6F610 /* Sources */,
+				1FA7680E190AA5B200C6F610 /* Frameworks */,
+				1FA7680F190AA5B200C6F610 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FA76817190AA5B200C6F610 /* PBXTargetDependency */,
+			);
+			name = RWMVimeoClientTests;
+			productName = RWMVimeoClientTests;
+			productReference = 1FA76811190AA5B200C6F610 /* RWMVimeoClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FA767E8190AA5B100C6F610 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RWM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Railwaymen;
+				TargetAttributes = {
+					1FA76810190AA5B200C6F610 = {
+						TestTargetID = 1FA767EF190AA5B100C6F610;
+					};
+				};
+			};
+			buildConfigurationList = 1FA767EB190AA5B100C6F610 /* Build configuration list for PBXProject "RWMVimeoClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FA767E7190AA5B100C6F610;
+			productRefGroup = 1FA767F1190AA5B100C6F610 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FA767EF190AA5B100C6F610 /* RWMVimeoClient */,
+				1FA76810190AA5B200C6F610 /* RWMVimeoClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FA767EE190AA5B100C6F610 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FA7680C190AA5B100C6F610 /* Images.xcassets in Resources */,
+				1FA767FE190AA5B100C6F610 /* InfoPlist.strings in Resources */,
+				1FA76807190AA5B100C6F610 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FA7680F190AA5B200C6F610 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FA7681D190AA5B200C6F610 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2984AFD33E1D4EA7AD1F587C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D57FAAB071EB4BB08A2E5176 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FA767EC190AA5B100C6F610 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FAC6B79190F98AC00AEDDB8 /* OAMutableURLRequest.m in Sources */,
+				1FAC6B53190F98A400AEDDB8 /* RWMVimeoOperationManager.m in Sources */,
+				1FAC6B7A190F98AC00AEDDB8 /* OAPlaintextSignatureProvider.m in Sources */,
+				1FAC6B4F190F98A400AEDDB8 /* NSURL+QueryComponents.m in Sources */,
+				1FAC6B4E190F98A400AEDDB8 /* NSString+QueryComponents.m in Sources */,
+				1FAC6B71190F98AC00AEDDB8 /* Base64Transcoder.c in Sources */,
+				1FA76800190AA5B100C6F610 /* main.m in Sources */,
+				1FAC6B77190F98AC00AEDDB8 /* OADataFetcher.m in Sources */,
+				1FAC6B75190F98AC00AEDDB8 /* OAAsynchronousDataFetcher.m in Sources */,
+				1FAC6B7B190F98AC00AEDDB8 /* OARequestParameter.m in Sources */,
+				1FAC6B52190F98A400AEDDB8 /* RWMVimeoAuthenticator.m in Sources */,
+				1FAC6B7D190F98AC00AEDDB8 /* OAToken.m in Sources */,
+				1FAC6B78190F98AC00AEDDB8 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
+				1FAC6B7C190F98AC00AEDDB8 /* OAServiceTicket.m in Sources */,
+				1FAC6B73190F98AC00AEDDB8 /* NSString+URLEncoding.m in Sources */,
+				1FAC6B74190F98AC00AEDDB8 /* NSURL+Base.m in Sources */,
+				1FAC6B72190F98AC00AEDDB8 /* NSMutableURLRequest+Parameters.m in Sources */,
+				1FA7680A190AA5B100C6F610 /* RWMViewController.m in Sources */,
+				1FAC6B51190F98A400AEDDB8 /* RWMHTTPVimeoRequestSerializer.m in Sources */,
+				1FAC6B76190F98AC00AEDDB8 /* OAConsumer.m in Sources */,
+				1FA76804190AA5B100C6F610 /* RWMAppDelegate.m in Sources */,
+				1FAC6B50190F98A400AEDDB8 /* OADataFetcher+Blocks.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FA7680D190AA5B200C6F610 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FA7681F190AA5B200C6F610 /* RWMVimeoClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FA76817190AA5B200C6F610 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FA767EF190AA5B100C6F610 /* RWMVimeoClient */;
+			targetProxy = 1FA76816190AA5B200C6F610 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1FA767FC190AA5B100C6F610 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FA767FD190AA5B100C6F610 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1FA76805190AA5B100C6F610 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FA76806190AA5B100C6F610 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1FA7681B190AA5B200C6F610 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FA7681C190AA5B200C6F610 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FA76820190AA5B200C6F610 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1FA76821190AA5B200C6F610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FA76823190AA5B200C6F610 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC34F6A81DAA4F149E3F8D35 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RWMVimeoClient/RWMVimeoClient-Prefix.pch";
+				INFOPLIST_FILE = "RWMVimeoClient/RWMVimeoClient-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1FA76824190AA5B200C6F610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC34F6A81DAA4F149E3F8D35 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RWMVimeoClient/RWMVimeoClient-Prefix.pch";
+				INFOPLIST_FILE = "RWMVimeoClient/RWMVimeoClient-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1FA76826190AA5B200C6F610 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RWMVimeoClient.app/RWMVimeoClient";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RWMVimeoClient/RWMVimeoClient-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RWMVimeoClientTests/RWMVimeoClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1FA76827190AA5B200C6F610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RWMVimeoClient.app/RWMVimeoClient";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RWMVimeoClient/RWMVimeoClient-Prefix.pch";
+				INFOPLIST_FILE = "RWMVimeoClientTests/RWMVimeoClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FA767EB190AA5B100C6F610 /* Build configuration list for PBXProject "RWMVimeoClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FA76820190AA5B200C6F610 /* Debug */,
+				1FA76821190AA5B200C6F610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FA76822190AA5B200C6F610 /* Build configuration list for PBXNativeTarget "RWMVimeoClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FA76823190AA5B200C6F610 /* Debug */,
+				1FA76824190AA5B200C6F610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FA76825190AA5B200C6F610 /* Build configuration list for PBXNativeTarget "RWMVimeoClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FA76826190AA5B200C6F610 /* Debug */,
+				1FA76827190AA5B200C6F610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FA767E8190AA5B100C6F610 /* Project object */;
+}
