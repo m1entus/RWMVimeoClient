@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name     = 'RWMVimeoClient'
   s.version  = '1.0.0'
   s.license  = 'MIT'
-  s.summary  = 'UIAppearance proxy for custom objects.'
+  s.summary  = 'AFNetworking Client for Vimeo Advanced API'
   s.homepage = 'https://github.com/m1entus/RWMVimeoClient'
   s.authors  = 'Michał Zaborowski'
   s.source   = { :git => 'https://github.com/m1entus/RWMVimeoClient.git', :tag => '1.0.0' }
